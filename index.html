@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>காசிராமன் (KASI) | வாசகர் பக்கம் — மௌனத்தின் பின்னணி இசை & நான்காவது நிழல்</title>
+  <meta name="description" content="எழுத்தாளர் காசிராமன் (KASI) அவர்களின் அதிகாரப்பூர்வ வாசகர் பக்கம். 'மௌனத்தின் பின்னணி இசை' (Amazon Kindle) மற்றும் எழுத்துப் பணியில் இருக்கும் 'நான்காவது நிழல்'." />
+  <meta property="og:title" content="மௌனத்தின் பின்னணி இசை | எழுத்தாளர் காசிராமன் (KASI)" />
+  <meta property="og:description" content="சென்னையின் மழைக்கால மாலையில், ஒரு வாக்மேனின் இரண்டு இயர்போன்கள் வழியே இணையும் ருத்ரன் மற்றும் தியாவின் மனதை வருடும் காதல் காவியம்." />
+  <meta property="og:image" content="assets/mounathin-pinnani-isai-cover.jpg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238C3A32'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23FAF6F0' font-family='Georgia,serif' font-weight='700' font-size='18'%3EK%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper-bg: #FAF6F0;
+      --paper-warm: #F3ECE1;
+      --paper-card: #FFFDF9;
+      --ink-dark: #231B18;
+      --ink-body: #4A3E39;
+      --ink-muted: #7D6E67;
+      --accent-burgundy: #8C3A32;
+      --accent-gold: #B8863B;
+      --accent-teal: #2B4C59;
+      --border-soft: #E5DACB;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--paper-bg);
+      background-image: radial-gradient(rgba(184, 134, 59, 0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+      color: var(--ink-dark);
+      font-family: 'Lora', 'Noto Serif Tamil', Georgia, serif;
+      line-height: 1.85;
+      overflow-x: hidden;
+      width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    /* Warm Literary Header & Collapsible Mobile Nav */
+    header {
+      background: rgba(250, 246, 240, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-soft);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 14px rgba(58, 42, 33, 0.04);
+    }
+
+    .nav-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .author-brand {
+      text-decoration: none;
+      color: var(--ink-dark);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .author-monogram {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--accent-burgundy);
+      color: #FFFDF9;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 10px rgba(140, 58, 50, 0.22);
+    }
+
+    .author-brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .author-brand-name {
+      font-family: 'Cormorant Garamond', 'Noto Serif Tamil', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      color: var(--ink-dark);
+    }
+
+    .author-brand-ta {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: var(--paper-card);
+      border: 1px solid var(--border-soft);
+      color: var(--ink-dark);
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.25rem;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .nav-toggle:hover {
+      background: var(--paper-warm);
+      border-color: var(--accent-gold);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--ink-body);
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+
+    .nav-menu a:hover {
+      color: var(--accent-burgundy);
+    }
+
+    .nav-kindle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--accent-burgundy);
+      color: #fff !important;
+      padding: 0.52rem 1.15rem;
+      border-radius: 99px;
+      font-size: 0.85rem !important;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 12px rgba(140, 58, 50, 0.22);
+      transition: transform 0.2s, background 0.2s !important;
+    }
+
+    .nav-kindle-btn:hover {
+      background: #722d26;
+      transform: translateY(-1px);
+    }
+
+    /* Mobile Collapsible Navigation Drawer */
+    @media (max-width: 880px) {
+      .nav-toggle {
+        display: inline-flex;
+      }
+
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.35rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--paper-card);
+        border-bottom: 1px solid var(--border-soft);
+        box-shadow: 0 14px 28px rgba(35, 27, 24, 0.1);
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height 0.32s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease, padding 0.25s ease;
+      }
+
+      .nav-menu.open {
+        max-height: 340px;
+        opacity: 1;
+        padding: 1rem 1.5rem 1.25rem;
+        pointer-events: auto;
+      }
+
+      .nav-menu a {
+        padding: 0.7rem 0.85rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #F3ECE1;
+      }
+
+      .nav-menu a:hover {
+        background: var(--paper-warm);
+      }
+
+      .nav-menu .nav-kindle-btn {
+        margin-top: 0.45rem;
+        justify-content: center;
+        border-bottom: none;
+        padding: 0.72rem 1.15rem;
+      }
+    }
+
+    /* Literary Hero Intro */
+    .hero-literary {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 2.25rem;
+      text-align: center;
+    }
+
+    .hero-ornament {
+      color: var(--accent-gold);
+      font-size: 1.25rem;
+      letter-spacing: 8px;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero-quote {
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: clamp(1.4rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--ink-dark);
+      line-height: 1.5;
+      max-width: 840px;
+      margin: 0 auto 1rem;
+    }
+
+    .hero-subtext {
+      font-size: 1.02rem;
+      color: var(--ink-muted);
+      max-width: 660px;
+      margin: 0 auto;
+      line-height: 1.85;
+    }
+
+    @media (max-width: 640px) {
+      .hero-literary {
+        padding: 2.25rem 1rem 1.5rem;
+      }
+      .hero-quote {
+        font-size: 1.25rem;
+      }
+      .hero-subtext {
+        font-size: 0.94rem;
+      }
+    }
+
+    /* 3D Physical Book Showcase */
+    .bookshelf-showcase {
+      max-width: 1120px;
+      margin: 1rem auto 4rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 2.5rem;
+    }
+
+    .reader-card {
+      background: var(--paper-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(58, 42, 33, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-width: 0;
+    }
+
+    .reader-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 42px rgba(58, 42, 33, 0.11);
+    }
+
+    .ribbon-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35rem 1rem;
+      border-radius: 99px;
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.3px;
+    }
+
+    .ribbon-available {
+      background: #FDF2EF;
+      color: var(--accent-burgundy);
+      border: 1px solid #F3D1C8;
+    }
+
+    .ribbon-writing {
+      background: #F4F7F8;
+      color: var(--accent-teal);
+      border: 1px solid #CFE0E6;
+    }
+
+    /* 3D Hardcover/Paperback Book Mockup with Page Edges */
+    .book-3d {
+      position: relative;
+      width: 215px;
+      aspect-ratio: 10 / 15.6;
+      margin: 0 auto 1.85rem;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .book-3d-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px 10px 10px 4px;
+      box-shadow:
+        -6px 6px 16px rgba(35, 27, 24, 0.22),
+        6px 0 0 #EDE5D8,
+        7px 0 0 #D8CBB8,
+        10px 0 0 #F4EFE6,
+        11px 0 0 #CFC1AE,
+        14px 12px 28px rgba(35, 27, 24, 0.26);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      overflow: hidden;
+    }
+
+    .book-3d:hover .book-3d-inner {
+      transform: rotateY(-8deg) translateY(-4px);
+    }
+
+    /* Subtle book spine crease on the left edge */
+    .book-3d-inner::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 14px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.28) 0%, rgba(255,255,255,0.18) 45%, rgba(0,0,0,0.08) 80%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .book-3d-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .book-card-title {
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--ink-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .book-card-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--accent-gold);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .book-card-hook {
+      font-size: 0.96rem;
+      color: var(--ink-body);
+      margin-bottom: 1.65rem;
+      flex-grow: 1;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      width: 100%;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      background: var(--accent-burgundy);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.82rem 1.4rem;
+      border-radius: 10px;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #722d26;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      background: var(--paper-warm);
+      color: var(--ink-dark);
+      text-decoration: none;
+      padding: 0.78rem 1.4rem;
+      border-radius: 10px;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--border-soft);
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #EAE0D0;
+      border-color: var(--accent-gold);
+    }
+
+    /* Story Sections — Warm Editorial Layout */
+    .story-section {
+      padding: 4.5rem 1.5rem;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .story-section.alt-bg {
+      background-color: var(--paper-warm);
+    }
+
+    .story-container {
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 3rem;
+    }
+
+    .story-genre {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.85rem;
+      color: var(--accent-burgundy);
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .story-heading {
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: clamp(1.35rem, 3.4vw, 2.4rem);
+      font-weight: 800;
+      color: var(--ink-dark);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .story-subheading {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--ink-muted);
+    }
+
+    /* Pull Quote Like Inside a Novel */
+    .novel-pullquote {
+      background: var(--paper-card);
+      border: 1px solid var(--border-soft);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin: 0 auto 2.75rem;
+      max-width: 860px;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(58, 42, 33, 0.04);
+    }
+
+    .novel-pullquote p {
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: 1.12rem;
+      font-style: italic;
+      color: var(--ink-dark);
+      line-height: 1.9;
+    }
+
+    .novel-pullquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-size: 0.88rem;
+      color: var(--accent-gold);
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .story-columns {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 2.75rem;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .story-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .story-prose p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-body);
+      font-size: 1.02rem;
+      text-align: justify;
+    }
+
+    .dropcap::first-letter {
+      float: left;
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: 2.9rem;
+      line-height: 0.9;
+      padding-right: 0.6rem;
+      padding-top: 0.2rem;
+      color: var(--accent-burgundy);
+      font-weight: 800;
+    }
+
+    /* Reader's Character Bookmark Cards */
+    .bookmark-panel {
+      background: var(--paper-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 8px 24px rgba(58, 42, 33, 0.05);
+    }
+
+    .bookmark-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.1rem;
+      border-bottom: 1px dashed var(--border-soft);
+    }
+
+    .character-item {
+      padding: 0.85rem 0;
+      border-bottom: 1px solid #F2EBE1;
+    }
+
+    .character-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .character-item strong {
+      display: block;
+      color: var(--accent-burgundy);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .character-item span {
+      font-size: 0.92rem;
+      color: var(--ink-body);
+    }
+
+    /* Interactive Open-Book Page Reader Modal */
+    .book-reader-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(35, 27, 24, 0.78);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+
+    .book-reader-modal.active {
+      display: flex;
+    }
+
+    .open-book-spread {
+      background: #FDFBF7;
+      border: 1px solid #D8CBB8;
+      border-radius: 14px;
+      max-width: 820px;
+      width: 100%;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.55),
+        0 0 0 6px #EFE7DA;
+      overflow: hidden;
+    }
+
+    .open-book-topbar {
+      background: #F3ECE1;
+      padding: 0.85rem 1.25rem;
+      border-bottom: 1px solid #E2D6C3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--ink-dark);
+    }
+
+    .close-reader-btn {
+      background: var(--accent-burgundy);
+      color: #fff;
+      border: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+
+    .open-book-page {
+      padding: 2.25rem 2.75rem;
+      overflow-y: auto;
+      font-family: 'Noto Serif Tamil', Georgia, serif;
+      color: var(--ink-dark);
+      line-height: 1.95;
+      font-size: 1.03rem;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.03) 0%, transparent 6%, transparent 94%, rgba(0,0,0,0.03) 100%),
+        #FDFBF7;
+    }
+
+    .open-book-page h3 {
+      font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+      color: var(--accent-burgundy);
+      margin-bottom: 1.15rem;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .open-book-page p {
+      margin-bottom: 1.15rem;
+      text-indent: 1.25rem;
+    }
+
+    .reader-cta-wrap {
+      margin-top: 1.5rem;
+      text-indent: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .reader-cta-wrap .btn-primary {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      line-height: 1.45;
+      padding: 0.78rem 1rem;
+      font-size: 0.88rem;
+    }
+
+    .open-book-footer {
+      background: #F3ECE1;
+      padding: 0.8rem 1.15rem;
+      border-top: 1px solid #E2D6C3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    #pageIndicator {
+      font-weight: 600;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-size: 0.84rem;
+    }
+
+    .page-nav-btn {
+      background: #FFFDF9;
+      border: 1px solid #D5C7B2;
+      color: var(--ink-dark);
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.82rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+      cursor: pointer;
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+
+    .page-nav-btn:hover:not(:disabled) {
+      background: var(--accent-burgundy);
+      color: #fff;
+      border-color: var(--accent-burgundy);
+    }
+
+    .page-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    /* Author Note Section */
+    .ornament {
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .author-letter {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--paper-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 18px;
+      padding: 2.75rem 2.5rem;
+      box-shadow: 0 10px 30px rgba(58, 42, 33, 0.05);
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+
+    .author-letter-heading {
+      font-family: 'Noto Serif Tamil', serif;
+      font-size: clamp(1.22rem, 3vw, 1.8rem);
+      font-weight: 800;
+      color: var(--ink-dark);
+      line-height: 1.45;
+      margin-bottom: 1.1rem;
+      overflow-wrap: anywhere;
+    }
+
+    .signature {
+      font-family: 'Cormorant Garamond', 'Noto Serif Tamil', serif;
+      font-style: italic;
+      font-size: clamp(1.35rem, 3vw, 1.8rem);
+      color: var(--accent-burgundy);
+      margin-top: 1.25rem;
+    }
+
+    @media (max-width: 640px) {
+      .bookshelf-showcase {
+        padding: 0 1rem;
+        gap: 1.5rem;
+        margin: 1rem auto 2.5rem;
+      }
+      .reader-card {
+        padding: 1.75rem 1.15rem;
+        border-radius: 16px;
+      }
+      .book-card-title {
+        font-size: 1.3rem;
+      }
+      .story-section {
+        padding: 3rem 1rem;
+      }
+      .novel-pullquote {
+        padding: 1.25rem 1.15rem;
+      }
+      .novel-pullquote p {
+        font-size: 0.98rem;
+      }
+      .story-prose p {
+        text-align: left;
+        font-size: 0.96rem;
+      }
+      .bookmark-panel {
+        padding: 1.35rem 1.15rem;
+      }
+      .author-letter {
+        padding: 1.75rem 1.15rem;
+        border-radius: 16px;
+      }
+      .book-reader-modal {
+        padding: 0.75rem;
+      }
+      .open-book-topbar {
+        padding: 0.75rem 1rem;
+        font-size: 0.8rem;
+      }
+      .open-book-page {
+        padding: 1.35rem 1.15rem;
+        font-size: 0.94rem;
+      }
+      .open-book-footer {
+        padding: 0.7rem 0.9rem;
+      }
+      .page-nav-btn {
+        padding: 0.42rem 0.7rem;
+        font-size: 0.78rem;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--border-soft);
+      color: var(--ink-muted);
+      font-size: 0.88rem;
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cozy Bookstore Navigation (Desktop + Collapsible Mobile Drawer) -->
+  <header>
+    <div class="nav-wrap">
+      <a href="#" class="author-brand">
+        <span class="author-monogram">K</span>
+        <span class="author-brand-text">
+          <span class="author-brand-name">KASI</span>
+          <span class="author-brand-ta">எழுத்தாளர் காசிராமன்</span>
+        </span>
+      </a>
+
+      <button id="navToggleBtn" class="nav-toggle" onclick="toggleMobileNav()" aria-label="மெனுவைத் திறக்க / மூட" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="navMenu" class="nav-menu">
+        <a href="#mounathin-pinnani-isai" onclick="closeMobileNav()">மௌனத்தின் பின்னணி இசை</a>
+        <a href="#naankaavadhu-nizhal" onclick="closeMobileNav()">நான்காவது நிழல் (எழுத்துப் பணியில்)</a>
+        <a href="#author-note" onclick="closeMobileNav()">எழுத்தாளரின் குறிப்பு</a>
+        <a href="https://www.amazon.in/dp/B0HQK6726R" target="_blank" rel="noopener" class="nav-kindle-btn" onclick="closeMobileNav()">
+          <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"/></svg>
+          <span>Amazon Kindle</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Literary Welcome -->
+  <section class="hero-literary">
+    <div class="hero-ornament">✦ ✦ ✦</div>
+    <h1 class="hero-quote">“ஒவ்வொரு புத்தகமும் நாம் வாழ நினைத்த இன்னொரு வாழ்க்கையின் திறவுகோல்.”</h1>
+    <p class="hero-subtext">
+      எழுத்தாளர் <strong>காசிராமன் (KASI)</strong> அவர்களின் அதிகாரப்பூர்வ வாசகர் பக்கத்திற்கு நல்வரவு. இங்கே புத்தகங்களின் முதல் பக்கங்களைப் புரட்டிப் பார்க்கலாம், கதை மாந்தர்களைச் சந்திக்கலாம்.
+    </p>
+  </section>
+
+  <!-- Two Books on the Reading Table -->
+  <section class="bookshelf-showcase">
+    <!-- Book 1 -->
+    <div class="reader-card">
+      <div class="ribbon-tag ribbon-available">✦ அமேசான் கிண்டிலில் இப்போது வாசிக்கலாம் (Out Now)</div>
+      <div class="book-3d" onclick="openReader('book1', 0)" title="புத்தகத்தைப் புரட்டிப் பார்க்க க்ளிக் செய்யவும்">
+        <div class="book-3d-inner">
+          <img src="assets/mounathin-pinnani-isai-cover.jpg" alt="மௌனத்தின் பின்னணி இசை புத்தக அட்டை" />
+        </div>
+      </div>
+      <h2 class="book-card-title">மௌனத்தின் பின்னணி இசை</h2>
+      <div class="book-card-en">The Background Score of Silence</div>
+      <p class="book-card-hook">
+        சென்னையின் மழைக்கால மாலையில், ஒரு வாக்மேனின் இரண்டு இயர்போன்கள் வழியே இணையும் ருத்ரன் மற்றும் தியாவின் மனதை வருடும் காதல் காவியம்.
+      </p>
+      <div class="card-actions">
+        <a href="https://www.amazon.in/dp/B0HQK6726R" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" style="flex-shrink:0;"><path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"/></svg>
+          <span>Amazon Kindle-ல் வாங்க / வாசிக்க (₹149 / KU)</span>
+        </a>
+        <button onclick="openReader('book1', 0)" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" style="flex-shrink:0;"><path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.58,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.2,20.4A8,8,0,0,0,184,128V40h16Z"/></svg>
+          <span>முதல் பக்கங்களைப் புரட்டிப் பார்க்க (Read Sample)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Book 2 (Strictly High-Level Overview & Cover Image Only) -->
+    <div id="naankaavadhu-nizhal" class="reader-card">
+      <div class="ribbon-tag ribbon-writing">
+        <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.32,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.69,147.32,64l24-24L216,84.69Z"/></svg>
+        <span>தற்போது எழுத்துப் பணியில் உள்ளது (Work in Progress)</span>
+      </div>
+      <div class="book-3d" style="cursor: default;">
+        <div class="book-3d-inner">
+          <img src="assets/naankaavadhu-nizhal-cover.jpg" alt="நான்காவது நிழல் புத்தக அட்டை" />
+        </div>
+      </div>
+      <h2 class="book-card-title">நான்காவது நிழல்</h2>
+      <div class="book-card-en">The Fourth Shadow</div>
+      <p class="book-card-hook">
+        பனிமூட்டம் சூழ்ந்த மலைப்பாதையின் இருட்டில், நகைச்சுவையும் நட்பும் கலந்த ஒரு பயணத்தின் நடுவே விரியும் விறுவிறுப்பான மர்ம நாவல்.
+      </p>
+      <div class="card-actions">
+        <div class="btn-secondary" style="border-color: #CFE0E6; background: #F4F7F8; color: var(--accent-teal); cursor: default;">
+          <svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" style="flex-shrink:0;"><path d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.32,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.69,147.32,64l24-24L216,84.69Z"/></svg>
+          <span>தற்போது எழுதப்பட்டு வருகிறது • விரைவில் வெளியாகும்</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book 1 Reading Room Section -->
+  <section id="mounathin-pinnani-isai" class="story-section alt-bg">
+    <div class="story-container">
+      <div class="story-header">
+        <div class="story-genre">முதல் நாவல் • காதல் & வாழ்வியல் (Contemporary Romance)</div>
+        <h2 class="story-heading">மௌனத்தின் பின்னணி இசை</h2>
+        <div class="story-subheading">The Background Score of Silence — A Novel by KASI</div>
+      </div>
+
+      <div class="novel-pullquote">
+        <p>
+          “ஒரு மனிதரைப் பற்றிய கற்பனை பிம்பத்தைக் காதலிப்பதற்கும், அந்த மனிதரின் பயங்களையும் பலவீனங்களையும் சேர்த்து நிஜமாகக் காதலிப்பதற்கும் இடையில் ஒரு நீண்ட மௌனம் இருக்கிறது. அந்த மௌனத்தின் பின்னணியில் ஒலிக்கும் இசையே இந்தக் கதை.”
+        </p>
+        <cite>— ‘மௌனத்தின் பின்னணி இசை’ நாவலிலிருந்து</cite>
+      </div>
+
+      <div class="story-columns">
+        <div class="story-prose">
+          <p class="dropcap">
+            1990-களில் பிறந்து வளர்ந்த ஒரு சராசரி சென்னை இளைஞனின் தயக்கங்களும் கனவுகளும் நிறைந்த உலகம் இது. கண்டிப்பான தந்தை, ஆண்கள் பள்ளியின் கடைசி பெஞ்ச், பத்தாம் வகுப்பு டியூஷன் சென்டரின் 'FLAMES' காகிதம், துறுதுறு தம்பி ஆதியின் (ஆத்ரேயன்) கலாட்டாக்கள், கல்லூரி நண்பன் சித்துவின் உற்ற நட்பு எனப் பயணிக்கும் <strong>ருத்ரனின்</strong> வாழ்க்கையில், ராயப்பேட்டை <strong>'முகில் புத்தகப் பதிப்பகத்தின்'</strong> வழியாகத் தென்றலாய் நுழைகிறாள் ஓவியப் பெண் <strong>தியா</strong>.
+          </p>
+          <p>
+            இரண்டு அடுக்கு சில்வர் டிபன் பாக்ஸ் புளிசாதம், மெரினா கடற்கரை மணலில் அமர்ந்து இரு போர்ட் கொண்ட வாக்மேனில் (Dual-Port Walkman) பகிர்ந்து கேட்கும் இளையராஜாவின் பாடல்கள், நருட்டோ அனிமேயின் 'இட்டாச்சி உச்சிஹா' கீசெயின் என அழகாக மலரும் இவர்களின் நட்பு, ஒரு மழை நாளில் புத்தகத்தின் <strong>'பக்கம் 96'</strong>-ல் காதலாகப் பூக்கிறது.
+          </p>
+          <p>
+            ஆனால், தாழ்வு மனப்பான்மையும் எதிர்பாராத பிரிவும் அவர்களைத் தனித்தனித் தீவுகளாய் மாற்றும்போது, அந்த மௌனத்தை உடைத்து இருவரும் எப்படி மீண்டும் இணைகிறார்கள் என்பதே 11 ஓவியங்களுடன் கூடிய இந்த நாவல்.
+          </p>
+          <div style="margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+            <a href="https://www.amazon.in/dp/B0HQK6726R" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" style="flex-shrink:0;"><path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"/></svg>
+              <span>Amazon Kindle-ல் முழு புத்தகத்தையும் வாசிக்க →</span>
+            </a>
+            <button onclick="openReader('book1', 0)" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" style="flex-shrink:0;"><path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.58,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.2,20.4A8,8,0,0,0,184,128V40h16Z"/></svg>
+              <span>மாதிரிப் பக்கங்களைப் புரட்ட (Flip Pages)</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="bookmark-panel">
+          <div class="bookmark-title">
+            <svg width="18" height="18" viewBox="0 0 256 256" fill="var(--accent-burgundy)"><path d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Z"/></svg>
+            <span>கதையின் முக்கிய மாந்தர்கள்</span>
+          </div>
+          <div class="character-item">
+            <strong>ருத்ரன் (Rudhran)</strong>
+            <span>'முகில் புத்தகப் பதிப்பகத்தின்' இளம் உதவி ஆசிரியர். தன் மனதிற்குள் ஆயிரம் வார்த்தைகளைச் சுமந்தாலும், நேரில் பேசத் தயங்கும் 90s கிட்.</span>
+          </div>
+          <div class="character-item">
+            <strong>தியா (Diya)</strong>
+            <span>சுருள் முடியும், மல்லிகை வாசமும், தூரிகை விரல்களும் கொண்ட புத்தக அட்டைப்பட ஓவியர். ருத்ரனின் மௌனத்தை இசையாக மாற்றுபவள்.</span>
+          </div>
+          <div class="character-item">
+            <strong>ஆத்ரேயன் / ஆதி (Aadhi)</strong>
+            <span>ருத்ரனின் இளைய தம்பி; அமைதியான நதியைப் போன்ற அண்ணனுக்கு நேர் எதிராக, கரையை உடைக்கும் வெள்ளம் போன்ற துறுதுறு சுபாவம் கொண்டவன்.</span>
+          </div>
+          <div class="character-item">
+            <strong>சித்து (Sidhu)</strong>
+            <span>ருத்ரனின் கல்லூரித் தோழன்; காதலிலும் வாழ்க்கையிலும் ருத்ரனுக்குத் தோள் கொடுக்கும் உற்ற நண்பன்.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- From the Author's Desk -->
+  <section id="author-note" class="story-section">
+    <div class="author-letter">
+      <div class="ornament">❦</div>
+      <h2 class="author-letter-heading">எழுத்தாளரின் மேஜையிலிருந்து...</h2>
+      <p style="color: var(--ink-body); font-size: 0.98rem; margin-bottom: 1rem;">
+        அன்புள்ள வாசகர்களுக்கு, நமக்குள் சொல்லப்படாமல் போன வார்த்தைகளையும், கடந்து வந்த 90-களின் அழகான நினைவுகளையும் அசைபோடும் ஒரு முயற்சியே எனது முதல் நாவலான <strong>‘மௌனத்தின் பின்னணி இசை’</strong>. தற்போது அமேசான் கிண்டிலில் வெளியாகியுள்ள இந்நாவலை வாசித்து உங்கள் கருத்துக்களைப் பகிர்ந்துகொள்ள வேண்டுகிறேன்.
+      </p>
+      <p style="color: var(--ink-body); font-size: 0.98rem;">
+        அடுத்ததாக, நகைச்சுவையும் விறுவிறுப்பான மர்மமும் இணைந்த <strong>‘நான்காவது நிழல்’ (The Fourth Shadow)</strong> நாவலை தற்போது எழுதி வருகிறேன். விரைவில் அப்புத்தகமும் உங்கள் கைகளில் தவழும்!
+      </p>
+      <div class="signature">— காசிராமன் (KASI)</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kasiraman Kamaraj (KASI) • வாசகர்களுக்காக அன்புடன் உருவாக்கப்பட்டது.</p>
+  </footer>
+
+  <!-- Interactive Open-Book Page Reader Modal -->
+  <div id="readerModal" class="book-reader-modal" onclick="if(event.target===this) closeReader()">
+    <div class="open-book-spread">
+      <div class="open-book-topbar">
+        <span id="readerBookTitle">புத்தக முன்னோட்டம்</span>
+        <button class="close-reader-btn" onclick="closeReader()">✕ மூடுக</button>
+      </div>
+      <div id="readerPageContent" class="open-book-page"></div>
+      <div class="open-book-footer">
+        <button id="prevPageBtn" class="page-nav-btn" onclick="changePage(-1)">◀ முந்தைய</button>
+        <span id="pageIndicator">பக்கம் 1 / 2</span>
+        <button id="nextPageBtn" class="page-nav-btn" onclick="changePage(1)">அடுத்த ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const samplePages = {
+      book1: {
+        title: "மௌனத்தின் பின்னணி இசை — மாதிரிப் பக்கங்கள்",
+        pages: [
+          `<h3>அத்தியாயம் 1: மௌனத்தின் முதல் சுரம்</h3>
+           <p>சில மனிதர்களின் வாழ்க்கை ஒரு திறந்த புத்தகத்தைப் போல இருக்கும். யார் வேண்டுமானாலும் எப்போது வேண்டுமானாலும் எந்தப் பக்கத்தையும் புரட்டிப் படித்துவிடலாம். ஆனால் ருத்ரனின் வாழ்க்கை அப்படிப்பட்டதல்ல; நூலகத்தின் கடைசி வரிசையில், யாருடைய கண்ணிலும் படாமல் தூசி படிந்து கிடக்கும் ஒரு பழைய கையெழுத்துப் பிரதியைப் போன்றது அவனது மனது.</p>
+           <p>1990-களின் இறுதியில் சென்னையின் ஒரு நடுத்தரக் குடும்பத்தில் வளர்ந்தவர்களுக்குக் காதல் என்பது சினிமா தியேட்டர் இருட்டிலும், இளையராஜாவின் கேசட் நாடாக்களிலும் மட்டுமே அறிமுகமான ஒரு ரகசிய மொழி. கண்டிப்பான தந்தையின் காலடிச் சத்தம் கேட்டாலே பாடம் படிப்பது போலப் பாவனை செய்யும் சிறுவனாகத்தான் ருத்ரன் வளர்ந்தான்.</p>
+           <p>ஆனால் அவனுடைய உலகத்திற்குள் வண்ணங்களையும் மல்லிகை வாசனையையும் சுமந்துகொண்டு தியா நுழைந்த அந்த ராயப்பேட்டை மழை நாளை அவனால் வாழ்நாளில் மறக்கவே முடியாது...</p>`,
+          `<h3>முகில் புத்தகப் பதிப்பகமும், புளிசாத வாசனையும்</h3>
+           <p>ராயப்பேட்டை 'முகில் புத்தகப் பதிப்பகத்தின்' மரப் படிக்கட்டுகளில் ஏறும்போதெல்லாம் ருத்ரனுக்குப் பழைய காகிதங்களின் வாசனை ஒருவித ஆறுதலைத் தரும். அன்று மதியம் அவனது மேஜைக்கு எதிரே, சுருள் முடியை அள்ளி முடிந்து, காதில் ஆடும் வெள்ளி ஜிமிக்கியோடு புத்தக அட்டைப்படத்திற்கு வண்ணம் தீட்டிக்கொண்டிருந்தாள் தியா.</p>
+           <p>தன் பையிலிருந்து இரண்டு அடுக்கு சில்வர் டிபன் பாக்ஸைத் திறந்து அவள் நீட்டிய கோவில் புளிசாதத்தின் சுவையும், மெரினா கடற்கரைக் காற்றில் அவனது வாக்மேனின் இரண்டாவது போர்ட்டில் தன் ஹெட்போனை மாட்டிக்கொண்டு அவள் கேட்ட முதல் பாடலும் — ருத்ரனின் நீண்ட கால மௌனத்திற்குப் புதிய பின்னணி இசையை எழுதத் தொடங்கின.</p>
+           <div class="reader-cta-wrap"><a href="https://www.amazon.in/dp/B0HQK6726R" target="_blank" rel="noopener" class="btn-primary">Amazon Kindle-ல் முழு நாவலையும் வாசிக்க →</a></div>`
+        ]
+      }
+    };
+
+    let currentBook = 'book1';
+    let currentPage = 0;
+
+    function toggleMobileNav() {
+      const menu = document.getElementById('navMenu');
+      const btn = document.getElementById('navToggleBtn');
+      const isOpen = menu.classList.toggle('open');
+      btn.textContent = isOpen ? '✕' : '☰';
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileNav() {
+      const menu = document.getElementById('navMenu');
+      const btn = document.getElementById('navToggleBtn');
+      if (menu && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        btn.textContent = '☰';
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    function openReader(bookKey, pageIdx) {
+      currentBook = bookKey;
+      currentPage = pageIdx;
+      renderReaderPage();
+      document.getElementById('readerModal').classList.add('active');
+    }
+
+    function closeReader() {
+      document.getElementById('readerModal').classList.remove('active');
+    }
+
+    function changePage(delta) {
+      const pages = samplePages[currentBook].pages;
+      const next = currentPage + delta;
+      if (next >= 0 && next < pages.length) {
+        currentPage = next;
+        renderReaderPage();
+      }
+    }
+
+    function renderReaderPage() {
+      const book = samplePages[currentBook];
+      document.getElementById('readerBookTitle').textContent = book.title;
+      document.getElementById('readerPageContent').innerHTML = book.pages[currentPage];
+      document.getElementById('pageIndicator').textContent = `பக்கம் ${currentPage + 1} / ${book.pages.length}`;
+      document.getElementById('prevPageBtn').disabled = (currentPage === 0);
+      document.getElementById('nextPageBtn').disabled = (currentPage === book.pages.length - 1);
+      document.getElementById('readerPageContent').scrollTop = 0;
+    }
+  </script>
+</body>
+</html>
